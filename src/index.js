@@ -7,7 +7,13 @@ function Envelope({envInfo}) {
   return(
     <div className="envelope">
       <Sender sender={envInfo.sender}/>
-    </div>
+    
+     <div className="receiver-container">
+     <Receiver receiver={envInfo.receiver}/>
+   </div>
+   </div>
+      
+    
   )
 }
 
@@ -41,6 +47,25 @@ function Sender({sender}){
       </span><br></br>
   </div>  
   )
+}
+
+function Receiver({receiver}){
+  const { receiverName, receiverAddress,receiverState} = receiver; 
+  return(
+  
+      <div className="receiver">
+          <span>
+          {receiverName}
+          </span> <br></br>
+          <span>
+          {receiverAddress}
+          </span><br></br>
+          <span>
+          {receiverState}
+          </span><br></br>
+      </div>
+
+  );
 }
 
 ReactDOM.render(<Envelope envInfo={addressInfo}/>, document.getElementById('root'));

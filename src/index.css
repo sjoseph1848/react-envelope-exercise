@@ -2,11 +2,25 @@
 
   border: 1px solid #ccc;
   width: 564px;
-  min-height: 68px;
+  min-height: 368px;
   padding: 10px;
   display: flex;
   font-family: "Helvetica", arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
 
+}
+
+.receiver-container {
+  text-align: center;
+  margin-top:20%;
+  margin-left: 20%;
+
+}
+
+.receiver { 
+  
+  width:100px;
+  height:100px;
+  display:inline-block;
 }
