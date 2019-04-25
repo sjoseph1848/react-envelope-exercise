@@ -11,6 +11,10 @@ function Envelope({envInfo}) {
      <div className="receiver-container">
      <Receiver receiver={envInfo.receiver}/>
    </div>
+
+    <div className="stamp-border"><div className="stamp">
+      STAMP
+    </div></div>
    </div>
       
     

@@ -1,9 +1,9 @@
 .envelope {
 
   border: 1px solid #ccc;
-  width: 564px;
+  width: 600px;
   min-height: 368px;
-  padding: 10px;
+  padding: 20px;
   display: flex;
   font-family: "Helvetica", arial, sans-serif;
   font-size: 14px;
@@ -23,4 +23,23 @@
   width:100px;
   height:100px;
   display:inline-block;
+  
 }
+
+
+.stamp-border {
+  margin-left: 30%;
+  padding:10px;
+  height: 50px;
+  width: 50px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.stamp {
+  transform:rotate(-30deg);
+  text-align: center;
+}
+
+
+
